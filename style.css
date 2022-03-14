@@ -824,6 +824,25 @@ h4 {
 .bg-presentation {
     background-image: url("img/image-de-presentation.bmp");
 }
+.text-primaire,
+.text-citation {
+    font-size: 22px;
+    display: inline-block;
+    max-width: 600px;
+}
+
+.text-citation {
+    font-style: italic;
+    margin: 0;
+}
+
+.legend {
+    font-size: 13.5px;;
+}
+
+.text-primaire.petit {
+    max-width: 420px;
+}
 
 @media (max-width: 1024px) {
     .bloc {
