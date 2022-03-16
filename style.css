@@ -778,6 +778,9 @@ h4 {
 .tc-white {
     color: #ffffff!important;
 }
+.tc-darkorange {
+    color: #4D0600!important;
+}
 
 .btn-atomic-tangerine {
     background: #F3976C;
@@ -846,6 +849,9 @@ h4 {
 }
 .text-footer {
     color: #4d0600 !important;
+}
+.adress {
+    font-size: 12px;
 }
 @media (max-width: 1024px) {
     .bloc {
