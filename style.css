@@ -10,6 +10,7 @@ body {
 a,
 button {
     transition: all .3s ease-in-out;
+    outline: none!important;
 }
 
 a:hover {
@@ -90,7 +91,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.webp");
+    background: url("img/texture-paper.png");
     background-size: 280px 280px;
 }
 
@@ -132,7 +133,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: black;
 }
 
 .d-bloc .a-btn:hover,
@@ -302,13 +303,8 @@ a:hover {
 
 .navbar-brand img {
     max-height: 200px;
-    width: auto;
     margin: 0 5px 0 0;
     display: inline;
-}
-.logo-2 {
-    height: 100px;
-    width: 100px;
 }
 
 .navbar-brand img[src$=svg] {
@@ -442,6 +438,8 @@ nav .caret {
 .mg-md {
     margin-top: 10px;
     margin-bottom: 20px;
+    font-size: 1.9em;
+    font-weight: bold;
 }
 
 .mg-lg {
@@ -463,6 +461,11 @@ nav .caret {
     color: #FFF;
     background: rgba(0, 0, 0, .3);
 }
+
+button {
+    outline: none!important;
+}
+
 .btn-rd {
     border-radius: 40px;
 }
@@ -515,6 +518,7 @@ nav .caret {
     position: fixed;
     bottom: 20px;
     right: 20px;
+    opacity: 0;
     z-index: 500;
     transition: all .3s ease-in-out;
 }
@@ -649,7 +653,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: black!important;
 }
 
 .container {
@@ -675,7 +679,7 @@ a {
 }
 
 p {
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .tight-width-whitespace {
@@ -690,7 +694,7 @@ p {
 
 .cta-hero {
     margin-top: 22px;
-    color: #FFFFFF!important;
+    color: black;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
@@ -707,6 +711,11 @@ h2 {
     line-height: 1.4em;
 }
 
+.realisations_intro {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
 h3 {
     font-size: 15px;
     text-transform: uppercase;
@@ -715,7 +724,7 @@ h3 {
 }
 
 .med-width-whitespace {
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto auto auto auto;
     box-shadow: 0px 0px 0px #000000;
 }
@@ -737,10 +746,14 @@ h4 {
     color: #FFFFFF!important;
 }
 
+.black {
+    color: black;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
 .portfolio-thumb {
     margin-bottom: 24px;
-    max-width: 100%;
-    height: auto;
 }
 
 .portfolio-row {
@@ -775,20 +788,17 @@ h4 {
 }
 
 .tc-white {
-    color: #ffffff!important;
-}
-.tc-darkorange {
-    color: #4D0600!important;
+    color:yellow!important;
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #4D0600!important;
+    color: black!important;
 }
 
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
-    color: #4D0600!important;
+    color: #FFFFFF!important;
 }
 
 .ltc-white {
@@ -817,41 +827,17 @@ h4 {
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.webp");
+    background-image: url("img/lines-h2-bg.png");
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.webp");
+    background-image: url("img/la-chouette-agence-banniere.jpg");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
-}
-.text-primaire,
-.text-citation {
-    font-size: 22px;
-    display: inline-block;
-    max-width: 600px;
+    background-image: url("img/image-de-presentation.jpg");
 }
 
-.text-citation {
-    font-style: italic;
-    margin: 0;
-}
-
-.legend {
-    font-size: 13.5px;;
-}
-
-.text-primaire.petit {
-    max-width: 420px;
-}
-.text-footer {
-    color: #4d0600 !important;
-}
-.adress {
-    font-size: 12px;
-}
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
@@ -899,7 +885,6 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -1060,5 +1045,108 @@ h4 {
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
+    }
+}
+
+
+/* CSS ajouté */
+
+a:focus, button:focus {
+    border: 3px solid red;
+}
+
+.texte_citation {
+    display: inline-block;
+    justify-content: center;
+    width:70%;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: black;
+}
+
+.citation_text {
+    display: inline-block;
+    justify-content: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.citation_author {
+    font-size: 0.9em;
+    font-weight: normal;
+}
+
+
+/* Page contact */
+.headerflex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accueil {
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.parlons_web {
+    color: black;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.votre_projet {
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Formulaire */
+label {
+    line-height: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input {
+    height: 25px;
+    width: 200px;
+}
+
+/* Contact */
+
+.row_tableau {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_adress {
+    font-size: 17px;
+    line-height: 25px;
+}
+
+/* footer */
+
+.social_tableau {
+    display: flex;
+    justify-content: space-around;
+}
+
+.centre {
+    text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    textarea {
+        width: 275px;
+        height: 150px;
+    }
+
+    .row_tableau {
+        flex-direction: column;
     }
 }
