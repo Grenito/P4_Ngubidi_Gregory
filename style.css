@@ -827,15 +827,15 @@ h4 {
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.webp");
+    background-image: url("img/lines-h2-bg.jpg");
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.webp");
+    background-image: url("img/la-chouette-agence-banniere.jpg");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.webp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
